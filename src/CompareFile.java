@@ -32,7 +32,7 @@ public class CompareFile {
         RecordOldmast.setLastName(inOldMast.next());
         RecordOldmast.setBalance(inOldMast.nextDouble());
 
-        //comparing and upadting balance
+        //comparing and updating balance
          boolean IndicatorOldMast=true;
         boolean IndicatorNewMast=true;
 
