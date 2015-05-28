@@ -37,8 +37,28 @@ public class ProgramTest {
             Scanner outNewMast=new Scanner(new File("newmast.txt"));
             Scanner outLog=new Scanner(new File("LogFile.txt"));
 
+            //displaying result for oldmast.
+            System.out.print("Oldmast.txt\n");
+           while(outOldmast.hasNext()){
+               System.out.printf("%d    %s    %s    %d\n",outOldmast.nextInt(),outOldmast.next(),outOldmast.next(),
+               outOldmast.nextDouble());
+           }
+
+            System.out.println("Newmast.txt");
+            while(outNewMast.hasNext()){
+                System.out.printf("%d   %s   %d\n",outNewMast.nextInt(),outNewMast.next(),outNewMast.nextDouble());
+            }
+
+            System.out.println("LogFile.txt");
+            System.out.print("The following account numbers don't match");
+            while(outLog.hasNext()){
+                System.out.printf("%d\n",outLog.nextInt());
+
+            }
+
         }catch(FileNotFoundException e){
             System.out.println("Sorry on ore more files could not be accessed");
+
         }
 
 
